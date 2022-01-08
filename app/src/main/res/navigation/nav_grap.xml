@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_grap"
+    app:startDestination="@id/FRAGMENTI1">
+
+    <fragment
+        android:id="@+id/FRAGMENTI1"
+        android:name="com.example.myapplication.fragmentebi.FRAGMENTI1"
+        android:label="FRAGMENTI1"
+        tools:layout="@layout/first_fragment">
+        <action
+            android:id="@+id/action_FRAGMENTI1_to_FRAGMENTI2"
+            app:destination="@id/FRAGMENTI2" />
+    </fragment>
+    <fragment
+        android:id="@+id/FRAGMENTI2"
+        android:name="com.example.myapplication.fragmentebi.FRAGMENTI2"
+        android:label="FRAGMENTI2"
+        tools:layout="@layout/second_fragment">
+
+        <argument android:name="amount"
+            app:argType="integer" android:defaultValue="0" />
+
+
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/FRAGMENTI3"
+        android:name="com.example.myapplication.fragmentebi.FRAGMENTI3"
+        android:label="FRAGMENTI3"
+        tools:layout="@layout/third_fragment"/>
+    <fragment
+        android:id="@+id/FRAGMENTI4"
+        android:name="com.example.myapplication.fragmentebi.FRAGMENTI4"
+        android:label="FRAGMENTI4"
+        tools:layout="@layout/my_fragment"/>
+</navigation>
